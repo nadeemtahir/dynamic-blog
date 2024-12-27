@@ -43,7 +43,7 @@ export default async function Post({ params }: PostProps) {
           <div className="text-sm text-gray-500">
             Published on: {new Date(post.date).toLocaleDateString()}
           </div>
-          <Comments postId={post.id} />
+          <Comments />
           <AuthorCard />
         </div>
       </article>
